@@ -1,0 +1,17 @@
+﻿<Page x:Class="Chat.Messages"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Chat"
+      mc:Ignorable="d" 
+      d:DesignHeight="402" d:DesignWidth="402"
+      Title="Messages" Name="messages" ShowsNavigationUI="False">
+
+    <Grid Background="#FFF5E9E9">
+        <TextBox Name="msgBox" HorizontalAlignment="Left" Height="37" Margin="22,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+        <Button Content="Отправить" x:Name ="Send"  HorizontalAlignment="Left" Height="37" Margin="237,312,0,0" VerticalAlignment="Top" Width="143" Click="Send_Click" IsEnabled="True"/>
+        <TextBlock x:Name ="TextBlockChat"  HorizontalAlignment="Center" Height="243" Margin="0,51,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="358" Background="#FFA0D9DD"/>
+        <Button Name="whisper" Content="Whisper" HorizontalAlignment="Left" Margin="120,372,0,0" VerticalAlignment="Top" Width="119" Click="Button_Click"/>
+    </Grid>
+</Page>
